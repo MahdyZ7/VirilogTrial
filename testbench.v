@@ -2,6 +2,7 @@ module testbench();
 	reg clk;
 	output wire q;
 	output wire q1;
+	output wire q2;
 	output reg rst;
 	
 // initial
@@ -11,13 +12,13 @@ module testbench();
 	// 	.clk(clk),
 	// 	.q(q)
 	// );
-	divide_by_3 dut (clk, q);
-	// divideby2 dut (rst,clk, q);
-	divideby3 dut2 (clk, q1);
+	divideby2 dut_2 (rst,clk, q);
+	divide_by_3 dut_3 (clk, q1);
+	divideby3 dut_3_2 (clk, q2);
 
 	initial begin
 		rst = 0;
-	  clk = 0;
+	  clk = 1;
 	  forever #1 clk = ~clk;
 	end
 	
@@ -25,7 +26,7 @@ module testbench();
 		$dumpvars;
 		$monitor("Time: %0d ns, clk: %b, q: %b q1: %b", $time, clk, q, q1);
 		rst =0;
-		#3 rst =1;
+		#2 rst =1;
 	  #100 $finish;
 	end
 endmodule

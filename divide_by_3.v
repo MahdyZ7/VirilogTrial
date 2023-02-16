@@ -11,6 +11,8 @@ module divide_by_3 (
 	    	q = 0;
 	    	count = 0;
 	  	end
+		else if (count == 0)
+			q = 0;
 		count = count + 1;
 	end
 endmodule
