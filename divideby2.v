@@ -1,17 +1,16 @@
+// simle desgin
 module divideby2 (
   input      rst_n,
   input      clk_rx,
   output reg clk_tx
 );
 
-always @ (posedge clk_rx) begin
-  if (~rst_n) begin
-    clk_tx <= 1'b0;
-  end
-  else begin
-    clk_tx <= ~clk_tx;
-  end
-end
+	always @ (posedge clk_rx) begin
+	  if (~rst_n)
+	    clk_tx <= 1'b0;
+	  else
+	    clk_tx <= ~clk_tx;
+	end
 
 endmodule
 

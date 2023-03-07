@@ -1,3 +1,4 @@
+// good module without 50% duty cycle
 module divide3(
     input reset,
     input clk,

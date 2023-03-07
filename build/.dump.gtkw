@@ -1,30 +1,33 @@
 [*]
 [*] GTKWave Analyzer v3.3.110 (w)1999-2020 BSI
-[*] Mon Mar  6 07:16:02 2023
+[*] Tue Mar  7 06:48:51 2023
 [*]
 [dumpfile] "/home/runner/verilog-trial/build/dump.vcd"
-[dumpfile_mtime] "Mon Mar  6 07:16:02 2023"
-[dumpfile_size] 2682
+[dumpfile_mtime] "Tue Mar  7 06:48:51 2023"
+[dumpfile_size] 2793
 [savefile] "/home/runner/verilog-trial/build/.dump.gtkw"
 [timestart] 0
-[size] 1402 698
+[size] 1139 364
 [pos] -1 -1
 *-3.000000 4 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
 [treeopen] testbench.
-[sst_width] 284
-[signals_width] 78
+[sst_width] 291
+[signals_width] 86
 [sst_expanded] 1
-[sst_vpaned_height] 190
+[sst_vpaned_height] 71
 @200
 -Input
--
 @28
-testbench.dut.clk
+testbench.dut2.clk
+testbench.dut2.mid_1
+testbench.dut2.mid_2
 @200
+-
 -Output
 @28
-testbench.dut.out
-@29
 testbench.dut2.out
+testbench.dut2.out
+@29
+testbench.dut.out
 [pattern_trace] 1
 [pattern_trace] 0
