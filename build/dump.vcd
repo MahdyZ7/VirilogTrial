@@ -1,5 +1,5 @@
 $date
-	Tue Mar  7 14:35:39 2023
+	Wed Mar  8 15:04:45 2023
 $end
 $version
 	Icarus Verilog
@@ -19,80 +19,76 @@ $var wire 1 & reset $end
 $var reg 2 ' count [1:0] $end
 $var reg 1 ( out $end
 $upscope $end
-$scope module divide3_1reg $end
+$scope module divide3_trail $end
 $var wire 1 ) clk $end
 $var wire 1 * out $end
 $var wire 1 + reset $end
 $var reg 2 , count [1:0] $end
 $upscope $end
-$scope module divide3_trail $end
-$var wire 1 - clk $end
-$var wire 1 . out $end
-$var wire 1 / reset $end
-$var reg 2 0 count [1:0] $end
-$upscope $end
 $scope module divide5 $end
-$var wire 1 1 clk $end
-$var wire 1 2 reset $end
-$var reg 4 3 count [3:0] $end
-$var reg 1 4 out $end
-$upscope $end
-$scope module divideby2 $end
-$var wire 1 5 clk_rx $end
-$var wire 1 6 rst_n $end
-$var reg 1 7 clk_tx $end
+$var wire 1 - clk $end
+$var wire 1 . reset $end
+$var reg 4 / count [3:0] $end
+$var reg 1 0 out $end
 $upscope $end
 $scope module divideby3 $end
-$var wire 1 8 clk $end
-$var reg 3 9 count [2:0] $end
-$var reg 1 : q $end
+$var wire 1 1 clk $end
+$var reg 3 2 count [2:0] $end
+$var reg 1 3 q $end
 $upscope $end
 $scope module testbench $end
-$var wire 1 ; q1 $end
-$var wire 1 < q $end
-$var reg 1 = clk $end
-$var reg 1 > rst $end
+$var wire 1 4 q2 $end
+$var wire 1 5 q1 $end
+$var wire 1 6 q $end
+$var reg 1 7 clk $end
+$var reg 1 8 rst $end
 $scope module dut $end
-$var wire 1 = clk $end
-$var wire 1 < out $end
-$var wire 1 > reset $end
-$var reg 1 ? mid_1 $end
-$var reg 1 @ mid_2 $end
+$var wire 1 7 clk $end
+$var wire 1 8 reset $end
+$var wire 1 4 div5 $end
+$var wire 1 5 div3 $end
+$var wire 1 6 div2 $end
+$scope module divide2 $end
+$var wire 1 7 clk_rx $end
+$var wire 1 8 rst_n $end
+$var reg 1 6 clk_tx $end
 $upscope $end
-$scope module dut2 $end
-$var wire 1 = clk $end
-$var wire 1 ; out $end
-$var wire 1 > reset $end
-$var reg 1 A mid_1 $end
-$var reg 1 B mid_2 $end
-$var reg 1 C mid_3 $end
+$scope module divide3 $end
+$var wire 1 7 clk $end
+$var wire 1 5 out $end
+$var wire 1 8 reset $end
+$var reg 1 9 mid_1 $end
+$var reg 1 : mid_2 $end
+$upscope $end
+$scope module divide5 $end
+$var wire 1 7 clk $end
+$var wire 1 4 out $end
+$var wire 1 8 reset $end
+$var reg 1 ; mid_1 $end
+$var reg 1 < mid_2 $end
+$var reg 1 = mid_3 $end
+$upscope $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
 #0
 $dumpvars
-0C
-0B
-0A
-0@
-0?
-0>
-1=
+0=
 0<
 0;
-x:
-b0 9
-z8
-x7
-z6
-z5
-x4
-bx 3
-z2
+0:
+09
+08
+17
+06
+05
+04
+x3
+b0 2
 z1
-bx 0
-z/
-x.
+x0
+bx /
+z.
 z-
 bx ,
 z+
@@ -108,418 +104,469 @@ z"
 z!
 $end
 #1
-0=
+07
 #2
-1;
+14
+15
 1<
-1B
-1@
-1?
-1=
-1>
+1:
+19
+16
+17
+18
 #3
-0=
+07
 #4
-0?
-1C
+06
+09
 1=
+17
 #5
-0<
-0=
+05
+07
 #6
-0B
-0@
 0<
-1=
+0:
+16
+05
+17
 #7
-0;
-0=
+04
+07
 #8
-1<
-1@
-1?
-0C
-1A
-0;
-1=
+15
+06
+1:
+19
+0=
+1;
+04
+17
 #9
-0=
+07
 #10
-0A
-0?
-1=
+0;
+09
+16
+17
 #11
-0<
-0=
+05
+07
 #12
-1;
-0@
-1B
-0<
-1=
+14
+06
+0:
+1<
+05
+17
 #13
-0=
+07
 #14
-1<
-1C
-1@
-1?
+15
 1=
+1:
+19
+16
+17
 #15
-0=
+07
 #16
-0?
-0B
-1=
+06
+09
+0<
+17
 #17
-0<
-0;
-0=
+05
+04
+07
 #18
-0C
-1A
-0@
-0<
-0;
-1=
+0=
+1;
+0:
+16
+05
+04
+17
 #19
-0=
+07
 #20
-1<
-1@
-1?
-0A
-1=
+15
+06
+1:
+19
+0;
+17
 #21
-0=
+07
 #22
-1;
-1B
-0?
-1=
+14
+1<
+09
+16
+17
 #23
-0<
-0=
+05
+07
 #24
-0@
-1C
-0<
+06
+0:
 1=
+05
+17
 #25
-0=
+07
 #26
-1<
-0B
-1@
-1?
-1=
+15
+0<
+1:
+19
+16
+17
 #27
-0;
-0=
+04
+07
 #28
-0?
-0C
-1A
-0;
-1=
+06
+09
+0=
+1;
+04
+17
 #29
-0<
-0=
+05
+07
 #30
-0A
-0@
-0<
-1=
+0;
+0:
+16
+05
+17
 #31
-0=
+07
 #32
+15
+14
+06
+1:
+19
 1<
-1;
-1@
-1?
-1B
-1=
+17
 #33
-0=
+07
 #34
-1C
-0?
 1=
+09
+16
+17
 #35
-0<
-0=
+05
+07
 #36
-0@
-0B
+06
+0:
 0<
-1=
+05
+17
 #37
-0;
-0=
+04
+07
 #38
-1<
-0C
-1A
-1@
-1?
-0;
-1=
+15
+0=
+1;
+1:
+19
+16
+04
+17
 #39
-0=
+07
 #40
-0?
-0A
-1=
+06
+09
+0;
+17
 #41
-0<
-0=
+05
+07
 #42
-1;
-1B
-0@
-0<
-1=
+14
+1<
+0:
+16
+05
+17
 #43
-0=
+07
 #44
-1<
-1@
-1?
-1C
+15
+06
+1:
+19
 1=
+17
 #45
-0=
+07
 #46
-0B
-0?
-1=
+0<
+09
+16
+17
 #47
-0<
-0;
-0=
+05
+04
+07
 #48
-0@
-0C
-1A
-0<
-0;
-1=
+06
+0:
+0=
+1;
+05
+04
+17
 #49
-0=
+07
 #50
-1<
-0A
-1@
-1?
-1=
+15
+0;
+1:
+19
+16
+17
 #51
-0=
+07
 #52
-1;
-0?
-1B
-1=
+14
+06
+09
+1<
+17
 #53
-0<
-0=
+05
+07
 #54
-1C
-0@
-0<
 1=
+0:
+16
+05
+17
 #55
-0=
+07
 #56
-1<
-1@
-1?
-0B
-1=
+15
+06
+1:
+19
+0<
+17
 #57
-0;
-0=
+04
+07
 #58
-0C
-1A
-0?
-0;
-1=
+0=
+1;
+09
+16
+04
+17
 #59
-0<
-0=
+05
+07
 #60
-0@
-0A
-0<
-1=
+06
+0:
+0;
+05
+17
 #61
-0=
+07
 #62
-1;
+14
+15
 1<
-1B
-1@
-1?
-1=
+1:
+19
+16
+17
 #63
-0=
+07
 #64
-0?
-1C
+06
+09
 1=
+17
 #65
-0<
-0=
+05
+07
 #66
-0B
-0@
 0<
-1=
+0:
+16
+05
+17
 #67
-0;
-0=
+04
+07
 #68
-1<
-1@
-1?
-0C
-1A
-0;
-1=
+15
+06
+1:
+19
+0=
+1;
+04
+17
 #69
-0=
+07
 #70
-0A
-0?
-1=
+0;
+09
+16
+17
 #71
-0<
-0=
+05
+07
 #72
-1;
-0@
-1B
-0<
-1=
+14
+06
+0:
+1<
+05
+17
 #73
-0=
+07
 #74
-1<
-1C
-1@
-1?
+15
 1=
+1:
+19
+16
+17
 #75
-0=
+07
 #76
-0?
-0B
-1=
+06
+09
+0<
+17
 #77
-0<
-0;
-0=
+05
+04
+07
 #78
-0C
-1A
-0@
-0<
-0;
-1=
+0=
+1;
+0:
+16
+05
+04
+17
 #79
-0=
+07
 #80
-1<
-1@
-1?
-0A
-1=
+15
+06
+1:
+19
+0;
+17
 #81
-0=
+07
 #82
-1;
-1B
-0?
-1=
+14
+1<
+09
+16
+17
 #83
-0<
-0=
+05
+07
 #84
-0@
-1C
-0<
+06
+0:
 1=
+05
+17
 #85
-0=
+07
 #86
-1<
-0B
-1@
-1?
-1=
+15
+0<
+1:
+19
+16
+17
 #87
-0;
-0=
+04
+07
 #88
-0?
-0C
-1A
-0;
-1=
+06
+09
+0=
+1;
+04
+17
 #89
-0<
-0=
+05
+07
 #90
-0A
-0@
-0<
-1=
+0;
+0:
+16
+05
+17
 #91
-0=
+07
 #92
+15
+14
+06
+1:
+19
 1<
-1;
-1@
-1?
-1B
-1=
+17
 #93
-0=
+07
 #94
-1C
-0?
 1=
+09
+16
+17
 #95
-0<
-0=
+05
+07
 #96
-0@
-0B
+06
+0:
 0<
-1=
+05
+17
 #97
-0;
-0=
+04
+07
 #98
-1<
-0C
-1A
-1@
-1?
-0;
-1=
-#99
+15
 0=
-#100
-0?
-0A
-1=
-#101
-0<
-0=
-#102
 1;
-1B
-0@
-0<
-1=
+1:
+19
+16
+04
+17
+#99
+07
+#100
+06
+09
+0;
+17
+#101
+05
+07
+#102
+14
+1<
+0:
+16
+05
+17
