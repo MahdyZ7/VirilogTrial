@@ -1,0 +1,17 @@
+Information: Updating graph... (UID-83)
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -loops
+        -max_paths 100
+Design : CLKDIVS
+Version: S-2021.06-SP5-5
+Date   : Thu Mar  9 12:36:28 2023
+****************************************
+
+Operating Conditions: SSG_0P72V_0P00V_0P00V_0P00V_M40C   Library: GF22FDX_SC8T_104CPP_BASE_CSC20L_SSG_0P72V_0P00V_0P00V_0P00V_M40C
+Wire Load Model Mode: top
+No loops.
+
+1

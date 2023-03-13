@@ -40,14 +40,9 @@ sh date > ${TRIAL_DIR}/lock_date
 #} else {
 #    read_file  -format ddc  ./${TRIAL_DIR}/unmapped/${DESIGN_NAME}_chip_unmapped.ddc
 #}
-analyze -format verilog { /eda_work/Asif/CLKDiv4/CLKDivider.v \
-		     /eda_work/Asif/CLKDiv4/ClkDivBy10.v \
-		     /eda_work/Asif/CLKDiv4/ClkDivBy2.v \
-		     /eda_work/Asif/CLKDiv4/ClkDivBy3.v \
-		     /eda_work/Asif/CLKDiv4/ClkDivBy4.v \
-		     /eda_work/Asif/CLKDiv4/ClkDivBy5.v \
-		     /eda_work/Asif/CLKDiv4/ClkDivBy2_5.v }
-#read_sverilog /eda_work/Asif/FLL_final_rtl/gf22_FLL.sv
+analyze -format verilog { ./bing_divider.v \
+		      }
+
 ####################################################################
 ## ELABORATE DUSTIN TOP LEVEL
 ####################################################################
@@ -80,26 +75,6 @@ set_dont_use [get_lib_cells */*20L*]
 ####################################################################
 link                                                      > ${TRIAL_DIR}/reports/d03_link_alsaqr.rpt
 
-#set_dont_touch_network [get_pins  i_host_domain/i_cva_subsystem/i_axi_riscv_atomics0/i_atomics/i_amos/key*]
-#set_dont_touch_network [get_pins i_dwc_tlb_cfg/i_axi_dw_converter/key_i*]
-#
-#set_dont_touch [get_nets {i_pad_frame/pad*/RETC}]
-#set_dont_touch [get_nets {i_pad_frame/pad*/PWROK}]
-#set_dont_touch [get_nets {i_pad_frame/pad*/IOPWROK}]
-#set_dont_touch [get_nets {i_pad_frame/pad*/BIAS}]
-#
-#set_dont_touch [get_nets {i_alsaqr_periph_padframe/i_periphs/i_periphs_pads/*/RETC}]
-#set_dont_touch [get_nets {i_alsaqr_periph_padframe/i_periphs/i_periphs_pads/*/PWROK}]
-#set_dont_touch [get_nets {i_alsaqr_periph_padframe/i_periphs/i_periphs_pads/*/IOPWROK}]
-#set_dont_touch [get_nets {i_alsaqr_periph_padframe/i_periphs/i_periphs_pads/*/BIAS}]
-#
-#set_dont_touch [get_nets {i_alsaqr_periph_padframe/i_periphs/i_periphs_pads/*/*/RETC}]
-#set_dont_touch [get_nets {i_alsaqr_periph_padframe/i_periphs/i_periphs_pads/*/*/PWROK}]
-#set_dont_touch [get_nets {i_alsaqr_periph_padframe/i_periphs/i_periphs_pads/*/*/IOPWROK}]
-#set_dont_touch [get_nets {i_alsaqr_periph_padframe/i_periphs/i_periphs_pads/*/*/BIAS}]
-#
-#set_dont_touch i_gwt_test
-#set_dont_touch [get_cells i_pad_frame/i_khalifa_dcdc]
 ####################################################################
 ## UNIQUIFY
 ####################################################################
@@ -116,9 +91,7 @@ set_operating_conditions -max SSG_0P72V_0P00V_0P00V_0P00V_M40C
 ## ADD CONSTRAINTS
 ####################################################################
 set_app_var hdlin_sv_enable_rtl_attributes true
-source -echo -verbose /eda_work/Asif/CLKDivider3/clkdivider.sdc     > ${TRIAL_DIR}/reports/d05_constr_clk.rpt
-#source -echo -verbose ./scripts/constraints/constraints.peripherals.sdc  > ${TRIAL_DIR}/reports/d07_constr_periphs.rpt
-#source -echo -verbose ./scripts/constraints/alsaqr.exceptions.sdc        > ${TRIAL_DIR}/reports/d08_constr_excep.rpt
+source -echo -verbose ./myconstraints.sdc     > ${TRIAL_DIR}/reports/d05_constr_clk.rpt
 
 ####################################################################
 ## INSERT CLK GATING CELLS
@@ -170,11 +143,6 @@ report_area  -hier -nosplit                                                     
 report_resources -hierarchy                                                                                  > ./${TRIAL_DIR}/reports/dp_resource.rpt
 report_clock_gating                                                                                          > ./${TRIAL_DIR}/reports/clock_gating_postsyn.rpt
 report_units                                                                                                 > ./${TRIAL_DIR}/reports/units.rpt
-
-#report_timing -max_paths 10 -to FLL_CVA6_CLK                                                                     > ./${TRIAL_DIR}/reports/timing_cva6_clock.rpt
-#report_timing -max_paths 10 -to FLL_SOC_CLK                                                                      > ./${TRIAL_DIR}/reports/timing_soc_clock.rpt
-#report_timing -max_paths 10 -to FLL_PER_CLK                                                                      > ./${TRIAL_DIR}/reports/timing_per_clock.rpt
-#report_timing -max_paths 10 -to FLL_CLUSTER_CLK                                                                  > ./${TRIAL_DIR}/reports/timing_clu_clock.rpt
 
 ####################################################################
 ## WRITE OUT CONSTRAINTS

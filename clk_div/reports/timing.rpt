@@ -1,0 +1,34 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : CLKDIVS
+Version: S-2021.06-SP5-5
+Date   : Thu Mar  9 13:30:58 2023
+****************************************
+
+Operating Conditions: SSG_0P72V_0P00V_0P00V_0P00V_M40C   Library: GF22FDX_SC8T_104CPP_BASE_CSC20L_SSG_0P72V_0P00V_0P00V_0P00V_M40C
+Wire Load Model Mode: top
+
+  Startpoint: divide3/mid_2_reg
+              (rising edge-triggered flip-flop)
+  Endpoint: div3 (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  divide3/mid_2_reg/CLK (SC8T_DFFQX1_CSC28L)              0.00       0.00 r
+  divide3/mid_2_reg/Q (SC8T_DFFQX1_CSC28L)               99.96      99.96 r
+  divide3/U7/Z (SC8T_AO21IAX1_MR_CSC28L)                 48.84     148.80 r
+  divide3/out (CLKDivider_divide3_mihai_1)                0.00     148.80 r
+  div3 (out)                                              0.00     148.80 r
+  data arrival time                                                148.80
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

@@ -1,7 +1,7 @@
 module CLKDIVS(
 	input reset,
-    input clk,
-    output div2,
+	input clk,
+	output div2,
 	output div3,
 	output div5
 );
