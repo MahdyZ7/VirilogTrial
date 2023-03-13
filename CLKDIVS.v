@@ -10,7 +10,7 @@ module CLKDIVS(
 		.rst_n(reset),
 		.clk_rx(clk),
 		.clk_tx(div2)
-	);
+    );
 
 	divide3_mihai divide3(
 		.reset(reset),
