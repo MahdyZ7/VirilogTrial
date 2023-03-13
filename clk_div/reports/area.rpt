@@ -1,0 +1,47 @@
+ 
+****************************************
+Report : area
+Design : CLKDIVS
+Version: S-2021.06-SP5-5
+Date   : Thu Mar  9 13:30:58 2023
+****************************************
+
+Library(s) Used:
+
+    GF22FDX_SC8T_104CPP_BASE_CSC28L_SSG_0P72V_0P00V_0P00V_0P00V_M40C (File: /home/eda_work/asif/22nm_lib/dbs/28lvt_dbs/GF22FDX_SC8T_104CPP_BASE_CSC28L_SSG_0P72V_0P00V_0P00V_0P00V_M40C_ccs.db)
+    GF22FDX_SC8T_104CPP_BASE_CSC24L_SSG_0P72V_0P00V_0P00V_0P00V_M40C (File: /home/eda_work/asif/22nm_lib/dbs/24lvt_dbs/GF22FDX_SC8T_104CPP_BASE_CSC24L_SSG_0P72V_0P00V_0P00V_0P00V_M40C_ccs.db)
+
+Number of ports:                           14
+Number of nets:                            29
+Number of cells:                           21
+Number of combinational cells:             12
+Number of sequential cells:                 6
+Number of macros/black boxes:               0
+Number of buf/inv:                          4
+Number of references:                       3
+
+Combinational area:                  3.261440
+Buf/Inv area:                        0.532480
+Noncombinational area:               9.185280
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                    12.446720
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area          Local cell area
+                                  ------------------  --------------------------- 
+Hierarchical cell                 Absolute   Percent  Combi-    Noncombi-  Black-
+                                  Total      Total    national  national   boxes   Design
+--------------------------------  ---------  -------  --------  ---------  ------  --------------------------
+CLKDIVS                             12.4467    100.0    0.0000     0.0000  0.0000  CLKDIVS
+divide2                              1.8637     15.0    0.3328     1.5309  0.0000  CLKDivider_divideby2_1
+divide3                              4.3930     35.3    1.3312     3.0618  0.0000  CLKDivider_divide3_mihai_1
+divide5                              6.1901     49.7    1.5974     4.5926  0.0000  CLKDivider_divide5_mihai_1
+--------------------------------  ---------  -------  --------  ---------  ------  --------------------------
+Total                                                   3.2614     9.1853  0.0000
+
+1

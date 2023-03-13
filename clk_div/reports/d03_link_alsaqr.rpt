@@ -1,0 +1,26 @@
+
+  Linking design 'CLKDIVS'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  GF22FDX_SC8T_104CPP_BASE_CSC20L_SSG_0P72V_0P00V_0P00V_0P00V_M40C (library)
+                              /home/eda_work/asif/22nm_lib/dbs/20lvt_dbs/GF22FDX_SC8T_104CPP_BASE_CSC20L_SSG_0P72V_0P00V_0P00V_0P00V_M40C_ccs.db
+  GF22FDX_SC8T_104CPP_BASE_CSC20SL_SSG_0P72V_0P00V_0P00V_0P00V_M40C (library)
+                              /home/eda_work/asif/22nm_lib/dbs/20slvt_dbs/GF22FDX_SC8T_104CPP_BASE_CSC20SL_SSG_0P72V_0P00V_0P00V_0P00V_M40C_ccs.db
+  GF22FDX_SC8T_104CPP_BASE_CSC24L_SSG_0P72V_0P00V_0P00V_0P00V_M40C (library)
+                              /home/eda_work/asif/22nm_lib/dbs/24lvt_dbs/GF22FDX_SC8T_104CPP_BASE_CSC24L_SSG_0P72V_0P00V_0P00V_0P00V_M40C_ccs.db
+  GF22FDX_SC8T_104CPP_BASE_CSC24SL_SSG_0P72V_0P00V_0P00V_0P00V_M40C (library)
+                              /home/eda_work/asif/22nm_lib/dbs/24slvt_dbs/GF22FDX_SC8T_104CPP_BASE_CSC24SL_SSG_0P72V_0P00V_0P00V_0P00V_M40C_ccs.db
+  GF22FDX_SC8T_104CPP_BASE_CSC28L_SSG_0P72V_0P00V_0P00V_0P00V_M40C (library)
+                              /home/eda_work/asif/22nm_lib/dbs/28lvt_dbs/GF22FDX_SC8T_104CPP_BASE_CSC28L_SSG_0P72V_0P00V_0P00V_0P00V_M40C_ccs.db
+  GF22FDX_SC8T_104CPP_BASE_CSC28SL_SSG_0P72V_0P00V_0P00V_0P00V_M40C (library)
+                              /home/eda_work/asif/22nm_lib/dbs/28slvt_dbs/GF22FDX_SC8T_104CPP_BASE_CSC28SL_SSG_0P72V_0P00V_0P00V_0P00V_M40C_ccs.db
+  IN22FDX_R1PH_NFHN_W00256B046M02C256_104cpp_SSG_0P720V_0P000V_0P000V_M40C (library)
+                              /home/eda_work/asif/22nm_lib/dbs/IN22FDX_R1PH_NFHN_W00256B046M02C256_dbs/IN22FDX_R1PH_NFHN_W00256B046M02C256_104cpp_SSG_0P720V_0P000V_0P000V_M40C.db
+  IN22FDX_R1PH_NFHN_W00256B128M02C256_104cpp_SSG_0P720V_0P000V_0P000V_M40C (library)
+                              /home/eda_work/asif/22nm_lib/dbs/IN22FDX_R1PH_NFHN_W00256B128M02C256_dbs/IN22FDX_R1PH_NFHN_W00256B128M02C256_104cpp_SSG_0P720V_0P000V_0P000V_M40C.db
+  IN22FDX_S1D_NFRG_W04096B032M04C128_104cpp_SSG_0P720V_0P720V_0P000V_0P000V_M40C (library)
+                              /home/eda_work/asif/22nm_lib/dbs/IN22FDX_S1D_NFRG_W04096B032M04C128_dbs/IN22FDX_S1D_NFRG_W04096B032M04C128_104cpp_SSG_0P720V_0P720V_0P000V_0P000V_M40C.db
+  IN22FDX_GPIO18_10M19S40PI_SSG_0P72_1P62_M40 (library)
+                              /home/eda_work/asif/22nm_lib/dbs/io_dbs/IN22FDX_GPIO18_10M19S40PI_SSG_0P72_1P62_M40.db
+
+1

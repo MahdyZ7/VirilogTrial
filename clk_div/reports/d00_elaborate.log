@@ -1,0 +1,41 @@
+Running PRESTO HDLC
+Presto compilation completed successfully. (CLKDIVS)
+Elaborated 1 design.
+Current design is now 'CLKDIVS'.
+Information: Building the design 'divideby2'. (HDL-193)
+
+Inferred memory devices in process
+	in routine divideby2 line 8 in file
+		'./divideby2.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     clk_tx_reg      | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (divideby2)
+Information: Building the design 'divide3_mihai'. (HDL-193)
+
+Inferred memory devices in process
+	in routine divide3_mihai line 11 in file
+		'./divide3_mihai.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      mid_1_reg      | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|      mid_2_reg      | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (divide3_mihai)
+Information: Building the design 'divide5_mihai'. (HDL-193)
+
+Inferred memory devices in process
+	in routine divide5_mihai line 10 in file
+		'./divide5_mihai.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      mid_3_reg      | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|      mid_1_reg      | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|      mid_2_reg      | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (divide5_mihai)
+1

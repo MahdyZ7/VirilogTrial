@@ -1,0 +1,12 @@
+###################################################################
+# Created by write_sdc on Thu Dec 22 14:13:13 2022
+###################################################################
+set sdc_version 2.1
+Information: Setting sdc_version outside of an SDC file has no effect (SDC-1)
+2.1
+set_units -time ps 
+1
+create_clock -name  CLK -period 500
+Warning: Creating virtual clock named 'CLK' with no sources. (UID-348)
+1
+1

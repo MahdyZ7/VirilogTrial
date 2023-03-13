@@ -1,0 +1,16 @@
+************************************
+Report : units
+Design : CLKDIVS
+Version: S-2021.06-SP5-5
+Date   : Thu Mar  9 13:30:58 2023
+
+************************************
+Units
+------------------------------------
+Time_unit            : 1.0e-12 Second(ps)
+Capacitive_load_unit : 1.0e-15 Farad(fF)
+Resistance_unit      : 1000 Ohm(kOhm)
+Voltage_unit         : 1 Volt
+Power_unit           : N/A
+Current_unit         : 1.0e-03 Amp(mA)
+1
